@@ -1,0 +1,125 @@
+@import 'reset';
+@import 'variaveis';
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundbody;
+    main{
+        display: flex;
+        justify-content: space-between;
+        width: 800px;
+        height: 400px;
+        background-color: $background;
+        border-radius: 5px;
+        margin: 20px 0px;
+        .esquerda{
+            position: relative;
+            top: -5%;
+            left: -0%;
+            width: 50%;
+            height: 110%;
+            background: $gradiente;
+            color: $corfontclara;
+            box-shadow: $boxshadown;
+            text-align: center;
+            padding: 20px;
+            h2{
+                color: #ffffff;
+                padding-bottom: 20px;
+            }
+            .linha{
+                width: 90%;
+                height: 2px;
+                background-color: #ffffff39;
+                margin: 0px auto;
+                border-radius: 1px;
+            }
+            span{
+                color: $corfontroxoclaro;
+                font-size: 30px;
+                font-weight: 300;
+            }
+            .imagem{
+                img{
+                    width: 150px;
+                    padding: 20px 0px;
+                }
+            }
+        }
+        .direita{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            color: $corfontescura;
+            padding: 30px;
+            .campInput{
+                width: 90%;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                i{
+                    font-size: 24px;
+                    color: $roxo;
+                    
+                }
+                .fa-user{
+                    margin-right: 2px;
+                }
+                input{
+                    flex: 1;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: solid 1px $corfontescura;
+                    padding-left: 10px;
+                    font-size: large;
+                    cursor: pointer;
+                    font-weight: 500;
+                    color: $roxo;
+                }
+            }
+            input:focus{
+                outline: solid 2px $roxo;
+            }
+            button{
+                width: 200px;
+                background: $roxo;
+                color: #ffffff;
+                border-radius: 10px;
+                padding: 10px 20px;
+                border: none;
+                margin: 0px auto;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: $roxohover;
+            }
+
+        }
+    }
+}
+@media screen and (max-width: 850px){
+    body{
+        main{
+            flex-direction: column-reverse;
+            width: 90% !important;
+            height: fit-content !important;
+            .esquerda{
+                width: 105% !important;
+                left: -2.5% !important;
+            }
+            .direita{
+                width: 100% !important;
+                input{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
