@@ -26,7 +26,6 @@ body main {
 body main .esquerda {
   position: relative;
   top: -5%;
-  left: 0%;
   width: 50%;
   height: 110%;
   background: linear-gradient(45deg, rgb(24, 41, 74) 25%, rgb(66, 49, 124) 75%);
@@ -117,6 +116,7 @@ body main .direita button:hover {
   body main .esquerda {
     width: 105% !important;
     left: -2.5% !important;
+    top: 10% !important;
   }
   body main .direita {
     width: 100% !important;
