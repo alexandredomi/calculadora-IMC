@@ -11,6 +11,8 @@ function calcular(){
 
     if(peso.value, altura.value == ''){
         alert('preecha todos os numeros')
+    }else if(!altura.value.includes('.')){
+        alert('sua altura tem que ter "." exemplo: 1.70')
     }else{
         const valorImc = (peso.value / (altura.value * altura.value)).toFixed(1)
         imc.textContent = (`${valorImc}kg/m2`)

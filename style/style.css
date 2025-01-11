@@ -116,6 +116,7 @@ body main .direita button:hover {
   body main .esquerda {
     width: 105% !important;
     left: -2.5% !important;
+    top: 20px !important;
   }
   body main .direita {
     width: 100% !important;
